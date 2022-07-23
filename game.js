@@ -20,7 +20,7 @@ guessButton.addEventListener("click", () => {
   target = generateTarget();
   // Retrieve the player's guess
 
-  //Displayinh an Alert when the input is empty
+  //Displaying an Alert when the input is empty
   if (humanGuessInput.value === "") {
     alert("input a number");
   } else {

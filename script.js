@@ -8,9 +8,14 @@ const generateTarget = () => {
 };
   
 const compareGuesses = (user,comp,target) => {
+  if (user < 0 || user > 10) {
+  throw alert('Please choose a number between 0 and 10');
+  }
+  else {
     const userDiff = Math.abs(target - user);
     const compDiff = Math.abs(target - comp);
     return userDiff <= compDiff;
+  };
 };
   
 const updateScore = winner => {
